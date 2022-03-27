@@ -226,6 +226,13 @@ ARTIKEL
     background-size: cover;
     margin: 0;
 }
+#gbk .parallax {
+    background-image: url("./img/dino-januarsa-gbk.jpg");
+}
+#selamat-datang .parallax {
+    background-image: url("./img/eko-herwantoro-monumen-selamat-datang.jpg");
+}
+
 #artikel .descr .p-heading {
     font-family: 'ChirpExtended'; font-weight: 900; font-style: normal;
     font-size: 40px;
@@ -250,7 +257,7 @@ ARTIKEL
     display: list-item;
 }
 
-#dpr-mpr {
+#dpr-mpr { /*SPECIAL CASE*/
     padding-bottom: 90px;
 }
 
