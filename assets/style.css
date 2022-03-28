@@ -137,7 +137,7 @@ HERO
 
 #hero .parallax {
     height: 100%;
-    background-image: url("./img/parallax.jpg");
+    background-image: url("./img/dino-januarsa-gbk.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -219,18 +219,22 @@ ARTIKEL
     display: inline-block;
 }
 #artikel .parallax {
-    background-image: url("./img/parallax.jpg");
+    background-image: url("./img/dino-januarsa-gbk.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
 }
+
 #gbk .parallax {
     background-image: url("./img/dino-januarsa-gbk.jpg");
 }
 #selamat-datang .parallax {
     background-image: url("./img/eko-herwantoro-monumen-selamat-datang.jpg");
+}
+#monas .parallax {
+    background-image: url("./img/gunawan-kartapranata-monas.jpg");
 }
 
 #artikel .descr .p-heading {
