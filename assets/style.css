@@ -174,37 +174,24 @@ HERO
     transition: 0.5s;
     margin: 10px;
     color: #ffffff;
-    background: #29519b;
+    background: #E09440;
 }
 #hero .btn-get-started:hover {
     background: #fff;
-    color: #29519b;
-}
-
-@media (min-width: 1024px) {
-    #hero {
-      background-attachment: fixed;
-    }
-}
-
-@media (max-width: 768px) {
-    #hero h1 {
-      font-size: 30px;
-      line-height: 36px;
-    }
-    #hero .parallax {
-      background-attachment: scroll;
-    }
-    #hero .btn-get-started {
-      font-size: 14px;
-      padding: 12px 20px;
-    }
+    color: #E09440;
 }
 
 
 /*-------------------------------
 ARTIKEL
 -------------------------------*/
+.tab {
+    margin-left: 2em;
+}
+.bold {
+    text-transform: uppercase;
+}
+
 .paddsection {
     padding-top: 90px;
 }
@@ -230,11 +217,20 @@ ARTIKEL
 #gbk .parallax {
     background-image: url("./img/dino-januarsa-gbk.jpg");
 }
+#hi .parallax {
+    background-image: url("./img/dino-januarsa-gbk.jpg");
+}
+#semanggi .parallax {
+    background-image: url("./img/dino-januarsa-gbk.jpg");
+}
 #selamat-datang .parallax {
     background-image: url("./img/eko-herwantoro-monumen-selamat-datang.jpg");
 }
 #monas .parallax {
     background-image: url("./img/gunawan-kartapranata-monas.jpg");
+}
+#dpr-mpr .parallax {
+    background-image: url("./img/dino-januarsa-gbk.jpg");
 }
 
 #artikel .descr .p-heading {
@@ -261,10 +257,53 @@ ARTIKEL
     display: list-item;
 }
 
-#dpr-mpr { /*SPECIAL CASE*/
+
+/*-------------------------------
+REFERENSI
+-------------------------------*/
+#referensi {
+    height: auto;
+    margin: auto;
+    background: #ffffff;
     padding-bottom: 90px;
 }
 
+#referensi .descr {
+    display: inline-block;
+}
+
+#referensi .parallax {
+    background-image: url("./img/dino-januarsa-gbk.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+#referensi .descr .p-heading {
+    font-family: 'ChirpExtended'; font-weight: 900; font-style: normal;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+}
+#referensi .descr .content {
+    width: 50%;
+    margin: 2em auto 0 auto;
+    font-family: 'Source Serif Pro', serif; font-weight: 400; font-size: 18px;
+    text-align: left;
+    line-height: 1.7em;
+    letter-spacing: 0.02em;
+}
+
+#referensi a {
+    color: black;
+}
+#referensi a:hover, #referensi a:focus {
+    color: #E09440;
+}
 
 /*-------------------------------
 FOOTER
@@ -274,11 +313,92 @@ FOOTER
 }
 
 #footer p {
-    font-family: 'Chirp'; font-weight: 500; font-style: normal;
+    font-family: 'ChirpExtended'; font-weight: 900; font-style: normal;
     font-size: 14px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: white;
+    color: #E09440;
     padding: 3em 0;
     margin: 0;
+}
+
+#footer a {
+    color: #ffffff;
+    line-height: 1.4em;
+}
+#footer a:hover, #footer a:focus {
+    color: #E09440;
+}
+
+
+/*-------------------------------
+@MEDIA >= 1024px
+-------------------------------*/
+@media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+    }
+
+    #artikel .parallax {
+        background-attachment: fixed;
+    }
+}
+
+
+/*-------------------------------
+@MEDIA <= 768px
+-------------------------------*/
+@media (max-width: 768px) {
+    /*nav*/
+    nav {
+        padding: 20px 15px;
+      }
+      .nav-menu {
+        margin-top: 40px;
+        display: none;
+        float: none;
+        width: 100%;
+      }
+      .nav-menu li {
+        float: none;
+        width: 100%;
+        text-align: center;
+        border-top: 0.5px solid #f7f7f785;
+        line-height: 45px;
+        margin-left: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .responsive {
+        float: right;
+        padding-top: 15px;
+        display: block;
+      }
+
+      /*hero*/
+    #hero h1 {
+        font-size: 30px;
+        line-height: 36px;
+      }
+      #hero .parallax {
+        background-attachment: scroll;
+      }
+      #hero .btn-get-started {
+        font-size: 14px;
+        padding: 12px 20px;
+      }
+
+      /* artikel */
+      #artikel .descr .p-heading {
+        max-width: 95%;
+        font-size: 22px;
+      }
+      #artikel .descr .content {
+        max-width: 98%;
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+      #artikel .parallax {
+        background-attachment: scroll;
+      }
 }
